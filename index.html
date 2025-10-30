@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POSTECH - Fullstack | Desafio</title>
+    <!-- Seguindo boas práticas de nome: styles.css (kebab-case) -->
+    <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+    <header class="topbar">
+        <div class="container">
+            <!-- Cabeçalho com nome do desafio e subtítulo -->
+            <h1 class="brand">POSTECH - FULLSTACK</h1>
+            <p class="subtitle">Desafio aula inaugural</p>
+        </div>
+    </header>
+
+    <main class="page">
+        <section class="card">
+            <!-- Título do card -->
+            <h2>Informações do grupo</h2>
+
+            <!-- Formulário principal.
+                 Observações:
+                 - id="group-form" é usado por script.js para interceptar o envio
+                 - novalidate para não usar validação nativa do navegador (tratamos com JS)
+            -->
+            <form id="group-form" novalidate>
+                <!-- Cada bloco abaixo representa um campo de nome de um integrante. -->
+                <div class="form-group">
+                    <label for="name1">Nome</label>
+                    <input id="name1" class="name-input" type="text" placeholder="Nome do integrante" />
+                </div>
+
+                <div class="form-group">
+                    <label for="name2">Nome</label>
+                    <input id="name2" class="name-input" type="text" placeholder="Nome do integrante" />
+                </div>
+
+                <div class="form-group">
+                    <label for="name3">Nome</label>
+                    <input id="name3" class="name-input" type="text" placeholder="Nome do integrante" />
+                </div>
+
+                <div class="form-group">
+                    <label for="name4">Nome</label>
+                    <input id="name4" class="name-input" type="text" placeholder="Nome do integrante" />
+                </div>
+
+                <div class="form-group">
+                    <label for="name5">Nome</label>
+                    <input id="name5" class="name-input" type="text" placeholder="Nome do integrante" />
+                </div>
+
+                <!-- Campo de texto maior para a história do grupo -->
+                <div class="form-group">
+                    <label for="message">História do grupo</label>
+                    <textarea id="message" rows="5"
+                        placeholder="Conte como o grupo se formou e seus objetivos"></textarea>
+                </div>
+
+                <!-- Botão de envio. O estado "disabled" é controlado pelo script durante a requisição -->
+                <div class="actions">
+                    <button type="submit" id="submit-btn">Enviar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
